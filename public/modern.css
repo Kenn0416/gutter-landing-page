@@ -165,3 +165,203 @@ body.gutter-landing .estimate+.promotions{
     padding-top:36px;
   }
 }
+
+/* Preserve section spacing while making each section easier to scan. */
+body.gutter-landing main>section.wrap:not(.promotions){
+  position:relative;
+}
+body.gutter-landing main>section.wrap:not(.promotions)::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:28px;
+  right:28px;
+  height:1px;
+  background:linear-gradient(90deg,#b5c2ce,transparent);
+  pointer-events:none;
+}
+body.gutter-landing main>section.wrap .eyebrow,
+body.gutter-landing .estimate .eyebrow{
+  display:table;
+  max-width:100%;
+  background:#eee2d7;
+  color:#70472c;
+  border-left:3px solid #99643d;
+  padding:5px 10px;
+  border-radius:0 5px 5px 0;
+  font-size:13px;
+  letter-spacing:1.3px;
+}
+body.gutter-landing .diagram-why{
+  margin-top:36px;
+}
+body.gutter-landing .diagram-note{
+  margin-top:20px;
+}
+body.gutter-landing .diagram-more{
+  margin-top:32px;
+}
+body.gutter-landing .hero{
+  padding-top:0;
+}
+body.gutter-landing .hero-copy{
+  padding-top:0;
+}
+body.gutter-landing .estimate-contact{
+  margin-top:36px;
+}
+body.gutter-landing .estimate-contact .estimate-phone{
+  margin:0 0 28px;
+}
+body.gutter-landing .estimate-contact .phone-cta{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:4px 8px;
+}
+body.gutter-landing .phone-digits{
+  white-space:nowrap;
+}
+body.gutter-landing .estimate-contact h3{
+  margin:0 0 24px;
+}
+body.gutter-landing .estimate-contact .business-hours,
+body.gutter-landing .estimate-contact .emergency-note,
+body.gutter-landing .estimate-contact .business-phone{
+  font-size:15px;
+  line-height:1.65;
+  margin:0 0 18px;
+}
+body.gutter-landing .estimate-contact .emergency-note,
+body.gutter-landing .contact-details .emergency-note{
+  color:#344451;
+}
+body.gutter-landing .estimate-contact .business-phone a{
+  display:inline-block;
+  min-height:44px;
+  padding:8px 0;
+  font-weight:700;
+  text-decoration:none;
+}
+body.gutter-landing .estimate-contact address{
+  font-style:normal;
+  font-size:15px;
+  line-height:1.7;
+}
+body.gutter-landing .company-contact{
+  background:#f0f3f6;
+  margin:0;
+}
+body.gutter-landing .company-contact>.wrap{
+  display:block;
+  max-width:900px;
+  padding-top:36px;
+  padding-bottom:28px;
+}
+body.gutter-landing .trust-summary{
+  margin-bottom:32px;
+  padding-bottom:28px;
+  border-bottom:1px solid #d3dce4;
+}
+body.gutter-landing .trust-badges{
+  max-width:470px;
+  margin:auto;
+  gap:16px;
+}
+body.gutter-landing .trust-badge{
+  background:#fffdf8;
+  min-height:122px;
+  padding:16px;
+  gap:10px;
+}
+body.gutter-landing .trust-badge strong{
+  font-size:14px;
+}
+body.gutter-landing .veteran-mark{
+  width:40px;
+  height:40px;
+}
+body.gutter-landing .trust-badge img{
+  width:140px;
+}
+body.gutter-landing .discount-note{
+  font-size:16px;
+  line-height:1.55;
+  margin:20px 0 0;
+}
+body.gutter-landing .contact-company{
+  grid-template-columns:180px minmax(0,1fr);
+  gap:36px;
+  max-width:660px;
+  margin:auto;
+}
+body.gutter-landing .contact-logo{
+  width:180px;
+}
+body.gutter-landing .contact-details h3{
+  font-size:20px;
+  line-height:1.4;
+  margin:0 0 18px;
+}
+body.gutter-landing .contact-details p{
+  margin-bottom:16px;
+}
+body.gutter-landing .review-link{
+  margin-top:24px;
+}
+body.gutter-landing .foot{
+  margin-top:0;
+}
+@media(max-width:760px){
+  body.gutter-landing main>section.wrap:not(.promotions)::before{
+    left:22px;
+    right:22px;
+  }
+  body.gutter-landing .hero,
+  body.gutter-landing .hero-copy{
+    padding-top:0;
+  }
+  body.gutter-landing .estimate-contact{
+    margin-bottom:8px;
+  }
+  body.gutter-landing .company-contact>.wrap{
+    padding-top:28px;
+    padding-bottom:24px;
+  }
+  body.gutter-landing .trust-summary{
+    margin-bottom:26px;
+    padding-bottom:24px;
+  }
+  body.gutter-landing .trust-badges{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px;
+  }
+  body.gutter-landing .trust-badge{
+    padding:14px 10px;
+    min-height:112px;
+  }
+  body.gutter-landing .trust-badge img{
+    width:120px;
+  }
+  body.gutter-landing .trust-badge strong{
+    font-size:13px;
+  }
+  body.gutter-landing .contact-company{
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+  body.gutter-landing .contact-logo{
+    width:150px;
+    margin:auto;
+  }
+  body.gutter-landing .contact-details{
+    text-align:center;
+  }
+  body.gutter-landing .contact-details h3{
+    font-size:19px;
+  }
+  body.gutter-landing .contact-details p,
+  body.gutter-landing .contact-details address{
+    font-size:14px;
+  }
+}
