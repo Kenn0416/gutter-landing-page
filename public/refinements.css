@@ -262,3 +262,45 @@ body.gutter-landing .hero {
     background-position:50% 50%;
   }
 }
+
+/* Keep the two gutter diagrams together for an immediate mobile comparison. */
+@media(max-width:760px) {
+  body.gutter-landing .cutaway-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    max-width:600px;
+    gap:12px;
+    align-items:stretch;
+  }
+  body.gutter-landing .diagram-top {
+    padding:14px 12px 10px;
+    min-height:104px;
+  }
+  body.gutter-landing .diagram-top .diagram-label {
+    font-size:16px;
+    line-height:1.3;
+  }
+  body.gutter-landing .diagram-tag {
+    font-size:12px;
+    line-height:1.45;
+  }
+  body.gutter-landing .cutaway-grid img {
+    height:clamp(108px,30vw,175px);
+  }
+  body.gutter-landing .cutaway-grid figcaption {
+    padding:14px 12px 18px;
+  }
+  body.gutter-landing .diagram-key {
+    gap:14px;
+  }
+  body.gutter-landing .diagram-key li {
+    grid-template-columns:20px minmax(0,1fr);
+    gap:6px;
+    font-size:13px;
+    line-height:1.5;
+  }
+  body.gutter-landing .diagram-key li>span {
+    width:20px;
+    height:20px;
+    font-size:11px;
+  }
+}
