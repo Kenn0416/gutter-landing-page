@@ -1,0 +1,178 @@
+:root {
+  --section-space: 72px;
+  --section-title-size: clamp(38px, 3.8vw, 52px);
+}
+
+html {
+  scroll-padding-top: 24px;
+}
+
+body.gutter-landing main > section.wrap,
+body.gutter-landing .band > .wrap,
+body.gutter-landing .estimate > .wrap {
+  padding-top: var(--section-space);
+  padding-bottom: var(--section-space);
+}
+
+body.gutter-landing .hero,
+body.article-page .hero {
+  padding-top: 40px;
+  padding-bottom: 64px;
+}
+
+body.gutter-landing .hero-copy h1,
+body.article-page .hero-copy h1 {
+  font-size: clamp(32px, 3.2vw, 44px);
+  line-height: 1.16;
+  letter-spacing: -1px;
+  margin-bottom: 26px;
+}
+
+body.gutter-landing h2,
+body.gutter-landing .section-heading h2,
+body.gutter-landing .band h2,
+body.article-page .guide-content h2,
+body.article-page .guide-content section h2,
+body.article-page .article-cutaway .section-heading h2 {
+  font-size: var(--section-title-size);
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin-bottom: 28px;
+}
+
+body.gutter-landing h3,
+body.article-page h3,
+body.gutter-landing .promo-card h3 {
+  font-size: 23px;
+  line-height: 1.35;
+  letter-spacing: -.3px;
+}
+
+body.gutter-landing .section-heading {
+  margin-bottom: 36px;
+}
+
+body.gutter-landing .section-heading h2 {
+  margin-bottom: 0;
+}
+
+body.gutter-landing .cards {
+  gap: 26px;
+  margin-top: 36px;
+}
+
+body.gutter-landing .product-intro {
+  align-items: start;
+  gap: 48px;
+}
+
+body.gutter-landing .faq {
+  gap: 64px;
+}
+
+body.article-page .guide-content {
+  padding-top: var(--section-space);
+  padding-bottom: var(--section-space);
+}
+
+body.article-page .guide-content > section,
+body.article-page .guide-content .article-cutaway {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.eyebrow {
+  line-height: 1.6;
+}
+
+body.gutter-landing .hero-img,
+body.article-page .hero-img {
+  min-width: 0;
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  padding: 12px 20px;
+  background: var(--navy);
+  color: white;
+  border-radius: 6px;
+  transform: translateY(-180%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--copper);
+  outline-offset: 5px;
+}
+
+@media (max-width: 760px) {
+  :root {
+    --section-space: 48px;
+    --section-title-size: clamp(34px, 8.5vw, 40px);
+  }
+
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 16px 20px;
+    gap: 14px;
+  }
+
+  header nav {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 16px;
+  }
+
+  body.gutter-landing .hero,
+  body.article-page .hero {
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
+
+  body.gutter-landing .hero-copy h1,
+  body.article-page .hero-copy h1 {
+    font-size: clamp(28px, 7vw, 32px);
+  }
+
+  body.gutter-landing h3,
+  body.article-page h3,
+  body.gutter-landing .promo-card h3 {
+    font-size: 22px;
+  }
+
+  body.gutter-landing .product-intro,
+  body.gutter-landing .faq {
+    gap: 28px;
+  }
+
+  body.gutter-landing .cards {
+    gap: 20px;
+    margin-top: 28px;
+  }
+
+  body.gutter-landing .section-heading {
+    gap: 22px;
+    margin-bottom: 28px;
+  }
+
+  body.article-page .guide-content > section,
+  body.article-page .guide-content .article-cutaway {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
