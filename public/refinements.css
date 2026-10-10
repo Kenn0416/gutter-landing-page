@@ -823,3 +823,63 @@ body.gutter-landing .banner-seasonal-subtitle {
     transform:none;
   }
 }
+
+/* Keep seasonal copy in the photo banner and the business logo with navigation. */
+body.gutter-landing .brand-banner-inner {
+  display:block;
+  min-height:245px;
+  padding-top:42px;
+  padding-bottom:42px;
+}
+body.gutter-landing .banner-brand-copy { max-width:620px; }
+body.gutter-landing .header-navigation {
+  padding-top:0;
+}
+body.gutter-landing .navigation-row {
+  display:grid;
+  grid-template-columns:150px minmax(0,1fr);
+  align-items:center;
+  gap:24px;
+  background:#fffaf2;
+  border-bottom:2px solid #a13c32;
+  padding:12px 18px;
+}
+body.gutter-landing .navigation-logo { display:block; }
+body.gutter-landing .navigation-logo img {
+  display:block;
+  width:150px;
+  max-width:100%;
+  height:auto;
+}
+body.gutter-landing header nav {
+  width:auto;
+  justify-content:flex-end;
+  padding:0;
+  color:#49392e;
+  background:transparent;
+}
+body.gutter-landing header nav>a[aria-current="page"] {
+  color:#49392e;
+}
+body.gutter-landing header nav>a[aria-current="page"]::after {
+  background:#a13c32;
+}
+body.gutter-landing header nav>a:not(.btn):not(.phone-cta):hover {
+  background:#efe2d0;
+  color:#49392e;
+}
+@media(max-width:760px) {
+  body.gutter-landing .brand-banner-inner {
+    min-height:245px;
+    padding:36px 24px;
+  }
+  body.gutter-landing .banner-brand-copy { max-width:340px; }
+  body.gutter-landing .navigation-row {
+    grid-template-columns:1fr;
+    justify-items:center;
+    gap:6px;
+    padding:12px 8px 8px;
+  }
+  body.gutter-landing .navigation-logo img { width:125px; }
+  body.gutter-landing header nav { justify-content:center; }
+}
