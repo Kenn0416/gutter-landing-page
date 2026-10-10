@@ -572,3 +572,48 @@ body.gutter-landing .header-actions {
 @media(prefers-reduced-motion:reduce) {
   body.gutter-landing .brand-banner { animation:none; background-position:50% 50%; }
 }
+
+/* Photo masthead: brand over the installation photo, followed by navigation. */
+body.gutter-landing .brand-banner {
+  background-image:linear-gradient(90deg,rgba(237,241,244,.97) 0%,rgba(237,241,244,.92) 46%,rgba(237,241,244,.28) 76%,rgba(237,241,244,.08) 100%),url('/assets/gutters.webp');
+  background-size:cover;
+  background-position:center,center 45%;
+  animation:none;
+}
+body.gutter-landing .brand-banner-inner {
+  min-height:280px;
+  grid-template-columns:210px minmax(0,470px);
+  gap:32px;
+  padding-top:38px;
+  padding-bottom:38px;
+}
+body.gutter-landing .banner-logo img { width:210px; }
+body.gutter-landing .banner-business-name { font-size:clamp(26px,3vw,36px); }
+body.gutter-landing .banner-service { color:#344451; }
+body.gutter-landing .hero-inner {
+  display:block;
+  min-height:0;
+}
+body.gutter-landing .hero-copy {
+  max-width:790px;
+  padding-bottom:0;
+}
+body.gutter-landing .hero-copy>p { max-width:680px; }
+@media(max-width:760px) {
+  body.gutter-landing .brand-banner {
+    background-image:linear-gradient(90deg,rgba(237,241,244,.92),rgba(237,241,244,.76)),url('/assets/gutters.webp');
+    background-position:center,65% 45%;
+  }
+  body.gutter-landing .brand-banner-inner {
+    grid-template-columns:1fr;
+    gap:14px;
+    min-height:285px;
+    padding:24px 20px;
+  }
+  body.gutter-landing .banner-logo img { width:170px; }
+  body.gutter-landing .banner-business-name {
+    font-size:26px;
+    max-width:350px;
+  }
+  body.gutter-landing .hero-inner { min-height:0; }
+}
