@@ -204,9 +204,13 @@ body.gutter-landing .contact-logo {
   border-radius:12px;
   box-shadow:0 4px 14px #24364214;
 }
-body.gutter-landing .hero { padding-top:0; }
+body.gutter-landing .hero { padding-top:28px; }
 @media(max-width:760px) {
   body.gutter-landing header>a:first-child { padding:8px 12px; }
   body.gutter-landing header>a:first-child img { width:180px; }
   body.gutter-landing .contact-logo { width:175px; margin-inline:auto; }
+}
+
+@media(max-width:760px) {
+  body.gutter-landing .hero { padding-top:24px; }
 }
