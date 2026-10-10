@@ -8,6 +8,33 @@
 <link rel="stylesheet" href="/style.css">
 <link rel="stylesheet" href="/modern.css">
 <link rel="stylesheet" href="/refinements.css">
+<style>
+/* Contact and trust additions; existing page sections stay unchanged. */
+.gutter-landing .phone-cta{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border:1px solid currentColor;border-radius:6px;text-decoration:none;font-weight:700;font-size:15px;line-height:1.4}
+.gutter-landing header .phone-cta{padding:10px 12px;white-space:nowrap}
+.gutter-landing .estimate-phone{margin:18px 0 24px}
+.gutter-landing .form-box .form-heading{font-family:Arial,Helvetica,sans-serif;font-size:22px;letter-spacing:0;margin:8px 10px 12px}
+.gutter-landing .form-help{margin:0 10px 16px;font-size:14px;line-height:1.6}
+.gutter-landing .form-box iframe{display:block!important;visibility:visible!important;width:100%;min-height:1345px;border:0}
+.gutter-landing .company-contact{background:#fff;border-top:1px solid #dde3eb}
+.gutter-landing .company-contact>.wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding-top:48px;padding-bottom:48px}
+.gutter-landing .contact-company{display:grid;grid-template-columns:165px 1fr;gap:28px;align-items:start}
+.gutter-landing .contact-logo{width:165px;max-width:100%;height:auto;display:block}
+.gutter-landing .contact-details p{font-size:15px;line-height:1.65;margin:0 0 12px}
+.gutter-landing .contact-details address{font-style:normal;font-size:15px;line-height:1.65}
+.gutter-landing .contact-details .contact-number{font-size:21px;font-weight:700;text-decoration:none;display:inline-block;min-height:44px;padding:6px 0}
+.gutter-landing .trust-badges{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}
+.gutter-landing .trust-badge{border:1px solid #dde3eb;border-radius:12px;background:#f5f7fa;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px 14px;text-align:center}
+.gutter-landing .veteran-mark{width:54px;height:54px;color:#102340}
+.gutter-landing .trust-badge strong{font-size:15px;line-height:1.45}
+.gutter-landing .trust-badge img{width:168px;max-width:100%;height:auto}
+.gutter-landing .discount-note{font-size:17px;font-weight:700;text-align:center;margin:22px 0 12px}
+.gutter-landing .review-link{font-size:14px;text-align:center;margin:0}
+.gutter-landing .sticky-contact{display:none}
+@media(max-width:900px){.gutter-landing header{flex-wrap:wrap}.gutter-landing header nav{flex-wrap:wrap;gap:12px}.gutter-landing .contact-company{grid-template-columns:135px 1fr;gap:20px}}
+@media(max-width:760px){.gutter-landing .company-contact>.wrap{grid-template-columns:1fr;gap:32px;padding-top:36px;padding-bottom:36px}.gutter-landing .contact-company{grid-template-columns:120px 1fr;gap:20px}.gutter-landing .contact-logo{width:120px}.gutter-landing .trust-badges{gap:12px}.gutter-landing .trust-badge{padding:18px 12px}.gutter-landing .sticky-contact{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;bottom:12px;left:16px;right:16px;z-index:3}.gutter-landing .sticky-contact .btn{font-size:14px;padding:14px 10px;text-align:center;box-shadow:0 5px 20px #0003}.gutter-landing .sticky-call{background:#102340}.gutter-landing .contact-details .contact-number{font-size:19px}}
+@media(max-width:360px){.gutter-landing .contact-company{grid-template-columns:1fr}.gutter-landing .trust-badges{grid-template-columns:1fr}}
+</style>
 <link rel="preload" href="/assets/gothic-heading.woff" as="font" type="font/woff" crossorigin>
 <link rel="canonical" href="https://dazzling-pothos-14d18c.netlify.app/gutter-protection/">
 <meta name="robots" content="index,follow,max-image-preview:large">
@@ -30,6 +57,7 @@
 <a href="/gutter-protection/" aria-current="page">Gutter Protection</a>
 <a href="/blog/why-gutter-protection-matters/">Blog</a>
 <a href="https://nextdayroofingsolutions.com/promotions/">Promotions</a>
+<a class="phone-cta" href="tel:+15136541186">Call 513-654-1186</a>
 <a class="btn" href="#estimate">Free estimate</a>
 </nav>
 </header>
@@ -42,6 +70,7 @@
 <p>Professional GutterDome gutter guard installation helps keep leaves out and rainwater moving. Get gutter protection fitted to your home, with a clear installation estimate before you commit.</p>
 <div class="cta-row">
 <a class="btn" href="#estimate">Get my protection estimate</a>
+<a class="phone-cta" href="tel:+15136541186">Call 513-654-1186</a>
 <a class="text-link" href="#how-it-works">How it works</a>
 <a class="text-link hero-blog-link" href="/blog/why-gutter-protection-matters/">Read the Gutter Protection Blog →</a>
 </div>
@@ -307,13 +336,43 @@
 <h2>Make gutter upkeep easier.</h2>
 <p>Tell us about your home and interest in GutterDome. We’ll help you explore suitable protection and installation options.</p>
 <p class="small">No obligation. A conversation about your home, your options, and your project.</p>
+<p class="estimate-phone"><a class="phone-cta" href="tel:+15136541186">Prefer to talk? Call 513-654-1186</a></p>
 <h3>Next Day Roofing &amp; Gutter Solutions</h3>
 <p class="small">4700 Duke Dr · Mason, OH 45040</p>
 </div>
 <div class="form-box">
+<h3 class="form-heading">Request your free estimate</h3>
+<p class="form-help">Complete the form below. If it doesn’t appear, <a id="estimate-form-direct" href="https://link.renovareach.com/widget/form/vTO0e0XG1KCBmnBkvqBK" target="_blank" rel="noopener">open the estimate form here →</a>.</p>
 <img class="form-brand" src="/assets/brand-logo.webp" alt="Next Day Roofing &amp; Gutter Solutions" width="420" height="203" decoding="async">
-<iframe loading="lazy" src="https://link.renovareach.com/widget/form/vTO0e0XG1KCBmnBkvqBK" title="Request an estimate from Next Day Roofing and Gutter Solutions" id="inline-vTO0e0XG1KCBmnBkvqBK" data-form-id="vTO0e0XG1KCBmnBkvqBK" data-layout="{'id':'INLINE'}" data-height="1345">
+<iframe loading="eager" style="display:block;width:100%;height:1345px;border:0;border-radius:4px" src="https://link.renovareach.com/widget/form/vTO0e0XG1KCBmnBkvqBK" title="Request an estimate from Next Day Roofing and Gutter Solutions" id="inline-vTO0e0XG1KCBmnBkvqBK" data-form-id="vTO0e0XG1KCBmnBkvqBK" data-layout="{&quot;id&quot;:&quot;INLINE&quot;}" data-trigger-type="alwaysShow" data-activation-type="alwaysActivated" data-deactivation-type="neverDeactivate" data-form-name="Free estimate" data-layout-iframe-id="inline-vTO0e0XG1KCBmnBkvqBK" data-height="1345">
 </iframe>
+</div>
+</div>
+</section>
+
+<section class="company-contact" aria-label="Company information and discounts">
+<div class="wrap">
+<div class="contact-company">
+<img class="contact-logo" src="/assets/brand-logo.webp" alt="Next Day Roofing &amp; Gutter Solutions" width="420" height="203" loading="lazy" decoding="async">
+<div class="contact-details">
+<p><strong>Business hours</strong><br><a href="https://www.google.com/maps/search/?api=1&amp;query=Next+Day+Roofing+Solutions+4700+Duke+Dr+Mason+OH" target="_blank" rel="noopener">See current days &amp; hours on Google →</a></p>
+<p><a class="contact-number" href="tel:+15136541186">513-654-1186</a></p>
+<address>4700 Duke Dr<br>Mason, OH 45040</address>
+</div>
+</div>
+<div>
+<div class="trust-badges">
+<div class="trust-badge">
+<svg class="veteran-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M32 4 54 13v18c0 14-10 24-22 29C20 55 10 45 10 31V13Z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="m32 17 4.4 8.9 9.8 1.4-7.1 6.9 1.7 9.8-8.8-4.6-8.8 4.6 1.7-9.8-7.1-6.9 9.8-1.4Z" fill="currentColor"/></svg>
+<strong>Veteran-Owned<br>&amp; Operated</strong>
+</div>
+<div class="trust-badge">
+<img src="/assets/gutterdome-logo.png" alt="GutterDome" width="300" height="141" loading="lazy" decoding="async">
+<strong>Gutter Protection</strong>
+</div>
+</div>
+<p class="discount-note">Ask about our senior citizen &amp; veteran discounts.</p>
+<p class="review-link"><a href="https://www.google.com/maps/search/?api=1&amp;query=Next+Day+Roofing+Solutions+4700+Duke+Dr+Mason+OH" target="_blank" rel="noopener">Read our customer reviews on Google →</a></p>
 </div>
 </div>
 </section>
@@ -322,7 +381,7 @@
 <img class="footer-brand" src="/assets/brand-logo.webp" alt="Next Day Roofing &amp; Gutter Solutions" width="420" height="203" decoding="async">© 2026 Next Day Roofing &amp; Gutter Solutions LLC<br>
 <a href="https://nextdayroofingsolutions.com/privacy-policy/">Privacy policy</a>
 </footer>
-<a class="btn sticky" href="#estimate">Get my protection estimate</a>
+<div class="sticky-contact" aria-label="Quick contact"><a class="btn" href="#estimate">Free estimate</a><a class="btn sticky-call" href="tel:+15136541186">Call 513-654-1186</a></div>
 <script src="/assets/gutter-page.js" defer>
 </script>
 <script src="https://link.renovareach.com/js/form_embed.js" defer>

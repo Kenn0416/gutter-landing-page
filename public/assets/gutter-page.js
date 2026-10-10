@@ -10,4 +10,6 @@
   }
   formUrl.searchParams.set('source', 'gutter-protection-regular');
   frame.src = formUrl.toString();
+  const directForm = document.getElementById('estimate-form-direct');
+  if (directForm) directForm.href = formUrl.toString();
 })();
