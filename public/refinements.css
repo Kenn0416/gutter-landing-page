@@ -376,3 +376,44 @@ body.gutter-landing .hero .brand-name {
     margin-bottom:20px;
   }
 }
+
+/* Page links stay in the nav bar; conversion buttons sit directly beneath it. */
+body.gutter-landing header {
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr);
+  gap:12px 28px;
+}
+body.gutter-landing header>a:first-child {
+  grid-row:1 / 3;
+}
+body.gutter-landing header nav {
+  justify-self:end;
+}
+body.gutter-landing .header-actions {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:flex-end;
+  gap:12px;
+}
+body.gutter-landing .header-actions .phone-cta {
+  background:#fff;
+}
+@media(max-width:760px) {
+  body.gutter-landing header {
+    grid-template-columns:minmax(0,1fr);
+    justify-items:center;
+    gap:14px;
+  }
+  body.gutter-landing header>a:first-child { grid-row:auto; }
+  body.gutter-landing header nav { justify-self:stretch; }
+  body.gutter-landing .header-actions {
+    justify-content:center;
+    gap:10px;
+  }
+  body.gutter-landing .header-actions .phone-cta,
+  body.gutter-landing .header-actions .btn {
+    font-size:12px;
+    padding:11px 14px;
+  }
+}
