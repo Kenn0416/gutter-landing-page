@@ -725,3 +725,101 @@ body.gutter-landing .banner-seasonal-subtitle {
     transform:none;
   }
 }
+
+/* Warm autumn palette throughout, preserving layout and section spacing. */
+body.gutter-landing {
+  --ink:#3c3028;
+  --muted:#65564b;
+  --navy:#49392e;
+  --cream:#faf5ed;
+  --sand:#efe2d0;
+  --line:#dac5ac;
+  --copper:#94603b;
+  --rust:#a13c32;
+  --panel-slate:#ead9c3;
+  --panel-border:#cdb395;
+  background-color:#faf5ed;
+  background-image:linear-gradient(115deg,#faf5ed 10%,#f2e5d3 45%,#f7eee2 75%,#faf5ed 100%);
+  background-size:cover;
+  background-position:center;
+  color:var(--ink);
+}
+body.gutter-landing .hero {
+  background:#faf5ed;
+  background-image:none;
+  animation:none;
+  border-bottom-color:#d5bca0;
+}
+body.gutter-landing .hero-copy p { color:#65564b; }
+body.gutter-landing .hero .brand-name { color:#855335; }
+body.gutter-landing header nav,
+body.gutter-landing .strip,
+body.gutter-landing .band,
+body.gutter-landing .foot {
+  background:#49392e;
+}
+body.gutter-landing header nav>a[aria-current="page"]::after { background:#e4ba85; }
+body.gutter-landing header nav>a:not(.btn):not(.phone-cta):hover {
+  background:#65503f;
+  color:#fff;
+}
+body.gutter-landing .sticky-call { background:#49392e; }
+body.gutter-landing .company-contact {
+  background:#f2e7d8;
+  border-top-color:#d9c5ab;
+}
+body.gutter-landing .estimate { background:#efe2d0; }
+body.gutter-landing .form-box { background:#fffdf8; }
+body.gutter-landing .card,
+body.gutter-landing .fit-check .card,
+body.gutter-landing .cutaway-grid figure,
+body.gutter-landing .inline-guide details[open],
+body.gutter-landing .estimate-contact {
+  background:#ead9c3;
+  border-color:#cdb395;
+}
+body.gutter-landing .promo-card,
+body.gutter-landing .area-grid details {
+  background:#f0e2ce;
+  border-color:#d5bda0;
+}
+body.gutter-landing .area-grid details[open],
+body.gutter-landing .trust-badge,
+body.gutter-landing .contact-logo {
+  background:#fffaf2;
+  border-color:#d5bda0;
+}
+body.gutter-landing .card p,
+body.gutter-landing .inline-guide details[open] p,
+body.gutter-landing .diagram-key li,
+body.gutter-landing .diagram-tag,
+body.gutter-landing .estimate-contact .emergency-note,
+body.gutter-landing .contact-details .emergency-note {
+  color:#584a3e;
+}
+body.gutter-landing .trust-summary { border-bottom-color:#d5bda0; }
+body.gutter-landing main>section.wrap:not(.promotions)::before {
+  background:linear-gradient(90deg,#c8aa85,transparent);
+}
+body.gutter-landing main>section.wrap .eyebrow,
+body.gutter-landing .estimate .eyebrow {
+  background:#eddbc4;
+  color:#784b2e;
+  border-left-color:#a16b3f;
+}
+body.gutter-landing .banner-seasonal-title {
+  color:#3c2c23;
+  animation:banner-copy-arrive .75s ease-out .12s both;
+}
+body.gutter-landing .banner-seasonal-subtitle {
+  color:#584537;
+  animation:banner-copy-arrive .85s ease-out 1.3s both;
+}
+@media(prefers-reduced-motion:reduce) {
+  body.gutter-landing .banner-seasonal-title,
+  body.gutter-landing .banner-seasonal-subtitle {
+    animation:none;
+    opacity:1;
+    transform:none;
+  }
+}
