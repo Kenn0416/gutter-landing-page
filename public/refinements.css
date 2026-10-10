@@ -417,3 +417,75 @@ body.gutter-landing .header-actions .phone-cta {
     padding:11px 14px;
   }
 }
+
+/* A restrained business masthead: unboxed brand, straight nav and active underline. */
+body.gutter-landing header {
+  padding-top:20px;
+  padding-bottom:18px;
+  gap:14px 36px;
+}
+body.gutter-landing header>a:first-child {
+  padding:0;
+  background:transparent;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+}
+body.gutter-landing header>a:first-child img {
+  width:210px;
+  height:auto;
+}
+body.gutter-landing header nav {
+  width:100%;
+  justify-content:flex-start;
+  gap:4px 14px;
+  padding:6px 16px;
+  background:#243642;
+  color:#fff;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+}
+body.gutter-landing header nav>a:not(.btn):not(.phone-cta) {
+  position:relative;
+  padding:12px 10px;
+  border-radius:0;
+  letter-spacing:.15px;
+}
+body.gutter-landing header nav>a[aria-current="page"] {
+  background:transparent;
+  color:#fff;
+}
+body.gutter-landing header nav>a[aria-current="page"]::after {
+  content:"";
+  position:absolute;
+  left:10px;
+  right:10px;
+  bottom:5px;
+  height:2px;
+  background:#e3bda0;
+}
+body.gutter-landing header nav>a:not(.btn):not(.phone-cta):hover {
+  background:#344b5b;
+  color:#fff;
+}
+body.gutter-landing .header-actions {
+  gap:16px;
+}
+@media(max-width:760px) {
+  body.gutter-landing header {
+    padding:18px 20px 16px;
+    gap:16px;
+  }
+  body.gutter-landing header>a:first-child img { width:210px; }
+  body.gutter-landing header nav {
+    justify-content:center;
+    padding:6px 8px;
+    gap:4px 8px;
+  }
+  body.gutter-landing header nav>a:not(.btn):not(.phone-cta) {
+    font-size:12px;
+    padding:12px 8px;
+  }
+  body.gutter-landing .header-actions { gap:12px; }
+}
