@@ -1290,3 +1290,35 @@ body.gutter-landing .contact-details .emergency-note{color:#655b59}
   body.gutter-landing .navigation-logo img{width:72px}
   body.gutter-landing header nav>a:not(.btn):not(.phone-cta){font-size:10px;padding-inline:4px}
 }
+
+
+/* One compact seasonal opening with the real CRM form, not a simulated quote. */
+body.gutter-landing .seasonal-opening{background:#211e24;background-image:linear-gradient(90deg,#19141bf5,#1f161ce0),url('/assets/autumn-leaves-banner.webp');background-size:cover;background-position:center;padding:0}
+body.gutter-landing .seasonal-opening .hero-inner{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;max-width:1176px;min-height:0;padding:48px 28px 56px;align-items:start}
+body.gutter-landing .seasonal-opening .hero-copy{padding:24px 0 0;max-width:none}
+body.gutter-landing .seasonal-opening .seasonal-kicker{display:inline-block;border-left:3px solid #f5a15d;padding:3px 0 3px 12px;color:#f5cda5;font-size:13px;line-height:1.5;margin:0 0 28px}
+body.gutter-landing .seasonal-opening .hero-copy h1{font-size:clamp(36px,4.4vw,58px);margin-bottom:20px}
+body.gutter-landing .seasonal-opening .brand-name{margin-bottom:14px}
+body.gutter-landing .seasonal-opening .seasonal-hook{font-family:Georgia,'Times New Roman',serif;font-size:24px;line-height:1.35;color:#f5b477;margin:0 0 18px}
+body.gutter-landing .seasonal-opening .hero-copy>p:not(.seasonal-hook):not(.seasonal-kicker):not(.small){font-size:16px;line-height:1.7;margin-bottom:24px}
+body.gutter-landing .seasonal-detail{margin-top:38px;padding-top:22px;border-top:1px solid #f5a15d40}
+body.gutter-landing .seasonal-detail p{font-family:Georgia,'Times New Roman',serif;font-size:20px;line-height:1.45;color:#f5cda5;margin:0 0 14px}
+body.gutter-landing .seasonal-detail span{display:block;font-size:13px;line-height:1.6;color:#f0e4d8}
+body.gutter-landing .opening-form{scroll-margin-top:24px;min-width:0;color:#29242c;padding:24px 10px 10px;background:#fffdf8;border:1px solid #e1c5a7;border-top:4px solid #b64c14;border-radius:12px;box-shadow:0 18px 44px #0003}
+body.gutter-landing .opening-form>.eyebrow{color:#a54a1c;font-size:11px;letter-spacing:1px;margin:0 10px 8px}
+body.gutter-landing .opening-form .form-heading{color:#29242c;font-size:24px;font-family:Arial,Helvetica,sans-serif;line-height:1.2;letter-spacing:-.4px;margin:0 10px 12px}
+body.gutter-landing .opening-form .form-help{color:#655b59;font-size:12px;line-height:1.6}
+body.gutter-landing .opening-form iframe{width:100%;min-height:0;background:#fff}
+@media(max-width:900px){body.gutter-landing .seasonal-opening .hero-inner{gap:28px;padding-inline:24px}}
+@media(max-width:760px){
+body.gutter-landing .seasonal-opening .hero-inner{grid-template-columns:minmax(0,1fr);gap:32px;padding:32px 20px 40px}
+body.gutter-landing .seasonal-opening .hero-copy{padding:0}
+body.gutter-landing .seasonal-opening .seasonal-kicker{margin-bottom:22px;font-size:12px}
+body.gutter-landing .seasonal-opening .hero-copy h1{font-size:36px}
+body.gutter-landing .seasonal-opening .seasonal-hook{font-size:22px}
+body.gutter-landing .seasonal-opening .hero-copy .cta-row{margin-top:24px;gap:14px 10px}
+body.gutter-landing .seasonal-detail{margin-top:24px;padding-top:18px}
+body.gutter-landing .seasonal-detail p{font-size:18px;margin-bottom:10px}
+body.gutter-landing .seasonal-opening .hero-copy>p.small{margin-top:20px!important}
+body.gutter-landing .opening-form{padding-top:20px}
+}
