@@ -304,3 +304,52 @@ body.gutter-landing .hero {
     font-size:11px;
   }
 }
+
+/* Clearly distinguish navigation from the opening page content. */
+body.gutter-landing header nav {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:8px 12px;
+  padding:10px 14px;
+  background:#fffdf8;
+  border:1px solid #c6d2df;
+  border-radius:12px;
+  box-shadow:0 3px 10px #2436420b;
+}
+body.gutter-landing header nav>a:not(.btn):not(.phone-cta) {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:44px;
+  padding:10px 12px;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:600;
+}
+body.gutter-landing header nav>a[aria-current="page"] {
+  color:#fff;
+  background:#243642;
+}
+body.gutter-landing header nav>a:not(.btn):not(.phone-cta):hover {
+  background:#e3eaf0;
+  color:#243642;
+}
+@media(max-width:760px) {
+  body.gutter-landing header nav {
+    width:100%;
+    box-sizing:border-box;
+    gap:8px;
+    padding:10px;
+  }
+  body.gutter-landing header nav>a:not(.btn):not(.phone-cta) {
+    font-size:12px;
+    padding:9px 10px;
+  }
+  body.gutter-landing header nav>.phone-cta,
+  body.gutter-landing header nav>.btn {
+    flex:1 1 auto;
+    font-size:12px;
+  }
+}
