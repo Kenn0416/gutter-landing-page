@@ -242,3 +242,23 @@ body.gutter-landing .strip {
   position:relative;
   border-top:3px solid #a9343c;
 }
+
+/* Gentle motion within the opening banner, without moving its content. */
+body.gutter-landing header,
+body.gutter-landing .hero {
+  background-color:#edf1f4;
+  background-image:linear-gradient(115deg,#edf1f4 10%,#e0e8ef 38%,#f0e8e0 65%,#edf1f4 90%);
+  background-size:240% 100%;
+  animation:opening-banner-drift 24s ease-in-out infinite alternate;
+}
+@keyframes opening-banner-drift {
+  from { background-position:0% 50%; }
+  to { background-position:100% 50%; }
+}
+@media(prefers-reduced-motion:reduce) {
+  body.gutter-landing header,
+  body.gutter-landing .hero {
+    animation:none;
+    background-position:50% 50%;
+  }
+}
