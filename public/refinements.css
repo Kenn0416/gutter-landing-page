@@ -617,3 +617,36 @@ body.gutter-landing .hero-copy>p { max-width:680px; }
   }
   body.gutter-landing .hero-inner { min-height:0; }
 }
+
+/* Seasonal banner copy, with the business name directly above the service headline. */
+body.gutter-landing .banner-seasonal-title {
+  font-size:clamp(26px,3vw,38px);
+  font-weight:750;
+  line-height:1.2;
+  letter-spacing:-.6px;
+  color:#243642;
+  margin:0 0 16px;
+}
+body.gutter-landing .banner-seasonal-subtitle {
+  font-size:17px;
+  line-height:1.55;
+  color:#344451;
+  margin:0;
+  max-width:430px;
+}
+body.gutter-landing .hero .brand-name {
+  font-size:clamp(20px,2vw,26px);
+  line-height:1.4;
+  margin-bottom:20px;
+}
+@media(max-width:760px) {
+  body.gutter-landing .banner-seasonal-title {
+    font-size:28px;
+    max-width:350px;
+  }
+  body.gutter-landing .banner-seasonal-subtitle {
+    font-size:15px;
+    max-width:340px;
+  }
+  body.gutter-landing .hero .brand-name { font-size:20px; }
+}
