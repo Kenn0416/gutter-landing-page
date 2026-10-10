@@ -58,3 +58,110 @@ body.gutter-landing .estimate-contact .small{
     padding:14px 16px;
   }
 }
+
+/* Compact comparison, calmer slate panels and spaced opening CTAs. */
+body.gutter-landing{
+  --panel-slate:#c6d2df;
+  --panel-border:#aebfd0;
+}
+body.gutter-landing .cutaway-grid figure,
+body.gutter-landing .inline-guide details[open],
+body.gutter-landing .estimate-contact,
+body.gutter-landing .card,
+body.gutter-landing .fit-check .card{
+  background:var(--panel-slate);
+  border-color:var(--panel-border);
+}
+body.gutter-landing .card p,
+body.gutter-landing .inline-guide details[open] p,
+body.gutter-landing .diagram-key li,
+body.gutter-landing .diagram-tag{
+  color:#344451;
+}
+body.gutter-landing .cutaway-grid{
+  max-width:980px;
+  margin-inline:auto;
+  align-items:start;
+}
+body.gutter-landing .cutaway-grid img{
+  width:100%;
+  height:220px;
+  aspect-ratio:auto;
+  object-fit:contain;
+}
+body.gutter-landing .diagram-top{
+  padding:18px 20px 10px;
+}
+body.gutter-landing .cutaway-grid figcaption{
+  padding:16px 20px 20px;
+}
+body.gutter-landing .diagram-key{
+  gap:16px;
+}
+body.gutter-landing .hero-copy>p{
+  margin-bottom:30px;
+  line-height:1.75;
+}
+body.gutter-landing .hero .cta-row{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px 14px;
+  max-width:480px;
+  margin-top:30px;
+}
+body.gutter-landing .hero .cta-row .btn,
+body.gutter-landing .hero .cta-row .phone-cta{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  min-height:50px;
+  padding:12px 14px;
+}
+body.gutter-landing .hero .cta-row>.text-link{
+  grid-column:1/-1;
+  margin-top:8px;
+}
+body.gutter-landing .hero-copy>p.small{
+  margin-top:28px!important;
+  margin-bottom:0;
+}
+body.gutter-landing .estimate+.promotions{
+  padding-top:48px;
+}
+@media(max-width:760px){
+  body.gutter-landing .cutaway-grid{
+    max-width:440px;
+    gap:20px;
+  }
+  body.gutter-landing .cutaway-grid img{
+    height:clamp(150px,45vw,205px);
+  }
+  body.gutter-landing .diagram-top .diagram-label{
+    font-size:18px;
+  }
+  body.gutter-landing .diagram-key li{
+    font-size:13px;
+    line-height:1.55;
+  }
+  body.gutter-landing .hero-copy{
+    padding-top:26px;
+    padding-bottom:12px;
+  }
+  body.gutter-landing .hero-copy h1{
+    margin-bottom:30px;
+  }
+  body.gutter-landing .hero .cta-row{
+    gap:20px 10px;
+    margin-top:32px;
+  }
+  body.gutter-landing .hero .cta-row .btn,
+  body.gutter-landing .hero .cta-row .phone-cta{
+    font-size:12px;
+    padding:12px 8px;
+    min-height:48px;
+  }
+  body.gutter-landing .estimate+.promotions{
+    padding-top:36px;
+  }
+}
