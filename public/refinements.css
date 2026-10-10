@@ -1322,3 +1322,58 @@ body.gutter-landing .seasonal-detail p{font-size:18px;margin-bottom:10px}
 body.gutter-landing .seasonal-opening .hero-copy>p.small{margin-top:20px!important}
 body.gutter-landing .opening-form{padding-top:20px}
 }
+
+
+/* Final typography refinement: softer editorial headings, readable UI, retained spacing. */
+body.gutter-landing{
+  font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+body.gutter-landing h1,
+body.gutter-landing h2,
+body.gutter-landing .section-heading h2{
+  font-family:Georgia,'Times New Roman',serif;
+  font-weight:400;
+  letter-spacing:-.7px;
+  line-height:1.18;
+}
+body.gutter-landing .seasonal-opening .hero-copy h1{
+  font-size:clamp(36px,4.1vw,54px);
+  line-height:1.16;
+  margin-bottom:24px;
+}
+body.gutter-landing h3,
+body.gutter-landing summary,
+body.gutter-landing .btn,
+body.gutter-landing .phone-cta,
+body.gutter-landing .diagram-label,
+body.gutter-landing .opening-form .form-heading{
+  font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font-weight:600;
+  letter-spacing:0;
+}
+body.gutter-landing .opening-form .form-heading{
+  font-weight:600;
+  font-size:23px;
+  line-height:1.3;
+}
+body.gutter-landing .seasonal-opening .brand-name{
+  font-weight:600;
+  line-height:1.5;
+  margin-bottom:18px;
+}
+body.gutter-landing .seasonal-opening .hero-copy>p:not(.seasonal-hook):not(.seasonal-kicker):not(.small){
+  max-width:540px;
+  line-height:1.8;
+}
+body.gutter-landing .seasonal-opening .hero-copy .cta-row{gap:18px 14px}
+body.gutter-landing .seasonal-detail{margin-top:32px}
+body.gutter-landing .card h3{font-weight:600}
+body.gutter-landing .diagram-key strong{font-weight:600}
+body.gutter-landing summary{line-height:1.5}
+body.gutter-landing .cutaway-grid .diagram-label{font-weight:600}
+@media(max-width:760px){
+  body.gutter-landing .seasonal-opening .hero-copy h1{font-size:36px;line-height:1.2}
+  body.gutter-landing .seasonal-opening .hero-copy .cta-row{gap:16px 10px}
+  body.gutter-landing .seasonal-opening .hero-inner{gap:36px}
+  body.gutter-landing .seasonal-detail{margin-top:28px}
+}
