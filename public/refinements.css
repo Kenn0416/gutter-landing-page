@@ -883,3 +883,87 @@ body.gutter-landing header nav>a:not(.btn):not(.phone-cta):hover {
   body.gutter-landing .navigation-logo img { width:125px; }
   body.gutter-landing header nav { justify-content:center; }
 }
+
+/* Rich dark foliage masthead with a restrained off-white, charcoal and rust page. */
+body.gutter-landing {
+  --ink:#293238;
+  --muted:#5d615f;
+  --navy:#293238;
+  --cream:#faf8f4;
+  --sand:#f0e7dd;
+  --line:#ddd4c9;
+  --panel-slate:#f0e7dd;
+  --panel-border:#d6c6b4;
+  background:#faf8f4;
+  color:#293238;
+}
+body.gutter-landing .brand-banner {
+  background-color:#202523;
+  background-image:linear-gradient(90deg,rgba(18,23,24,.78),rgba(18,23,24,.64) 58%,rgba(18,23,24,.38)),url('/assets/autumn-leaves-banner.webp');
+  background-size:cover;
+  background-position:center;
+  border-top-color:#a13c32;
+  border-bottom-color:#293238;
+}
+body.gutter-landing .banner-seasonal-title {
+  color:#fff8ee;
+  text-shadow:0 2px 12px #0006;
+}
+body.gutter-landing .banner-seasonal-subtitle {
+  color:#f3e8d9;
+  text-shadow:0 2px 10px #0007;
+}
+body.gutter-landing .hero {
+  background:#faf8f4;
+  background-image:none;
+  border-bottom-color:#ddd4c9;
+}
+body.gutter-landing .hero-copy p { color:#5d615f; }
+body.gutter-landing .strip,
+body.gutter-landing .band,
+body.gutter-landing .foot,
+body.gutter-landing .sticky-call {
+  background:#293238;
+}
+body.gutter-landing .navigation-row {
+  background:#fffdf9;
+  border-bottom-color:#a13c32;
+}
+body.gutter-landing header nav,
+body.gutter-landing header nav>a[aria-current="page"] {
+  color:#293238;
+  background:transparent;
+}
+body.gutter-landing header nav>a:not(.btn):not(.phone-cta):hover {
+  background:#f0e7dd;
+  color:#293238;
+}
+body.gutter-landing .company-contact { background:#f2ece4; }
+body.gutter-landing .estimate { background:#f0e7dd; }
+body.gutter-landing .card,
+body.gutter-landing .fit-check .card,
+body.gutter-landing .cutaway-grid figure,
+body.gutter-landing .inline-guide details[open],
+body.gutter-landing .estimate-contact,
+body.gutter-landing .promo-card {
+  background:#f0e7dd;
+  border-color:#d6c6b4;
+}
+body.gutter-landing .area-grid details { background:#f5efe7; }
+body.gutter-landing .trust-badge,
+body.gutter-landing .contact-logo,
+body.gutter-landing .form-box {
+  background:#fffdf9;
+}
+body.gutter-landing .card p,
+body.gutter-landing .inline-guide details[open] p,
+body.gutter-landing .diagram-key li,
+body.gutter-landing .diagram-tag {
+  color:#505854;
+}
+@media(max-width:760px) {
+  body.gutter-landing .brand-banner {
+    background-image:linear-gradient(90deg,rgba(18,23,24,.78),rgba(18,23,24,.64)),url('/assets/autumn-leaves-banner.webp');
+    background-position:62% center;
+  }
+}
