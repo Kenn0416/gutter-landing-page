@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dazzling-pothos-14d18c.netlify.app/sitemap.xml
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: OAI-AdsBot
+Allow: /
+
+Sitemap: https://gutter-landing-page.kendall-evans2360.workers.dev/sitemap.xml
