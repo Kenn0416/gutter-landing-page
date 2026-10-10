@@ -17,3 +17,44 @@ body.gutter-landing h2{font-size:clamp(36px,3.8vw,52px);line-height:1.13;letter-
 @media(max-width:760px){body.gutter-landing h2,body.gutter-landing .section-heading h2,body.gutter-landing .band h2{font-size:clamp(32px,8.4vw,38px);line-height:1.16;letter-spacing:-1px;margin-bottom:24px}body.gutter-landing h3{font-size:22px}body.gutter-landing .wrap{padding-top:60px;padding-bottom:60px}body.gutter-landing .product-intro,body.gutter-landing .cutaway-section,body.gutter-landing .fit-check,body.gutter-landing .blog-feature{padding-top:24px;padding-bottom:54px}body.gutter-landing .service-areas{padding-top:24px;padding-bottom:42px}body.gutter-landing .promotions{padding-top:16px;padding-bottom:42px}body.gutter-landing .estimate .wrap{padding-top:54px;padding-bottom:60px}body.gutter-landing .card{padding:26px}body.gutter-landing .cards{margin-top:28px}body.gutter-landing .section-heading{margin-bottom:28px}}
 
 .hero-blog-link{flex-basis:100%;margin-top:6px;font-weight:600}body.gutter-landing .hero-img,body.article-page .hero-img{height:auto;min-height:0;aspect-ratio:1000/667;object-fit:contain}body.gutter-landing .hero-inner{align-items:center}@media(max-width:760px){body.gutter-landing .hero-img,body.article-page .hero-img{height:auto;aspect-ratio:1000/667}}
+
+/* Soft blue panels for the gutter comparison, guide and estimate contact. */
+body.gutter-landing .cutaway-grid figure{
+  background:#eaf0f5;
+  border-color:#d3dee7;
+}
+body.gutter-landing .inline-guide details[open]{
+  background:#eaf0f5;
+}
+body.gutter-landing .estimate-contact{
+  background:#eaf0f5;
+  border:1px solid #d3dee7;
+  border-radius:18px;
+  padding:28px;
+  margin-top:30px;
+}
+body.gutter-landing .estimate-contact .estimate-phone{
+  margin:0 0 30px;
+}
+body.gutter-landing .estimate-contact .phone-cta{
+  background:#f8fafc;
+  border-color:#b6c7d4;
+}
+body.gutter-landing .estimate-contact h3{
+  margin:0 0 22px;
+}
+body.gutter-landing .estimate-contact .small{
+  margin-top:0!important;
+  margin-bottom:0;
+  line-height:1.8;
+}
+@media(max-width:760px){
+  body.gutter-landing .estimate-contact{
+    padding:24px;
+    margin-top:28px;
+  }
+  body.gutter-landing .estimate-contact .phone-cta{
+    width:100%;
+    padding:14px 16px;
+  }
+}
