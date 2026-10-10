@@ -214,3 +214,31 @@ body.gutter-landing .hero { padding-top:28px; }
 @media(max-width:760px) {
   body.gutter-landing .hero { padding-top:24px; }
 }
+
+/* A continuous masthead and hero banner, framed by the service strip. */
+body.gutter-landing header,
+body.gutter-landing .hero {
+  background:#edf1f4;
+}
+body.gutter-landing header {
+  border-bottom:0;
+  box-shadow:none;
+}
+body.gutter-landing .hero {
+  border-bottom:1px solid #cbd5df;
+}
+body.gutter-landing .hero .brand-name {
+  color:#70472c;
+}
+body.gutter-landing .hero-img {
+  border-radius:18px;
+  border:1px solid #d0d9e1;
+  box-shadow:0 12px 28px #24364218;
+}
+body.gutter-landing .hero .phone-cta {
+  background:#fff;
+}
+body.gutter-landing .strip {
+  position:relative;
+  border-top:3px solid #a9343c;
+}
