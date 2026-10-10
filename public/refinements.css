@@ -1290,3 +1290,43 @@ body.gutter-landing .contact-details .emergency-note{color:#655b59}
   body.gutter-landing .navigation-logo img{width:72px}
   body.gutter-landing header nav>a:not(.btn):not(.phone-cta){font-size:10px;padding-inline:4px}
 }
+
+
+/* Approved CTA emphasis: slightly larger labels and touch targets only. */
+body.gutter-landing .hero .cta-row .btn,
+body.gutter-landing .hero .cta-row .phone-cta{
+  font-size:17px;
+  font-weight:700;
+  min-height:56px;
+  padding:15px 12px;
+  line-height:1.35;
+}
+body.gutter-landing .estimate-phone .phone-cta{
+  font-size:17px;
+  font-weight:700;
+  min-height:52px;
+  padding:13px 16px;
+}
+body.gutter-landing .sticky-contact .btn{
+  font-size:16px;
+  font-weight:700;
+  min-height:56px;
+  padding:15px 8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  line-height:1.35;
+}
+@media(max-width:760px){
+  body.gutter-landing .hero .cta-row .btn,
+  body.gutter-landing .hero .cta-row .phone-cta{
+    font-size:16px;
+    min-height:56px;
+    padding:15px 8px;
+  }
+}
+@media(max-width:360px){
+  body.gutter-landing .hero .cta-row .btn,
+  body.gutter-landing .hero .cta-row .phone-cta,
+  body.gutter-landing .sticky-contact .btn{font-size:15px}
+}
