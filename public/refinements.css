@@ -650,3 +650,78 @@ body.gutter-landing .hero .brand-name {
   }
   body.gutter-landing .hero .brand-name { font-size:20px; }
 }
+
+/* Photographic autumn banner with lighter editorial type and staggered copy. */
+body.gutter-landing .brand-banner {
+  background-color:#ede5db;
+  background-image:linear-gradient(90deg,rgba(250,247,241,.30),rgba(250,247,241,.12) 65%,transparent),url('/assets/autumn-leaves-banner.webp');
+  background-position:center;
+  background-size:cover;
+  animation:none;
+}
+body.gutter-landing .brand-banner-inner {
+  grid-template-columns:180px minmax(0,470px);
+  min-height:270px;
+  gap:36px;
+}
+body.gutter-landing .banner-logo img { width:180px; }
+body.gutter-landing .banner-seasonal-title {
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:clamp(29px,3vw,40px);
+  font-weight:400;
+  line-height:1.2;
+  letter-spacing:-.5px;
+  color:#243642;
+  margin-bottom:18px;
+  animation:banner-copy-arrive .7s ease-out .08s both;
+}
+body.gutter-landing .banner-seasonal-subtitle {
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:20px;
+  font-weight:400;
+  line-height:1.45;
+  color:#344451;
+  animation:banner-copy-arrive .7s ease-out .65s both;
+}
+@keyframes banner-copy-arrive {
+  from { opacity:0; transform:translateY(10px); }
+  to { opacity:1; transform:translateY(0); }
+}
+@media(max-width:760px) {
+  body.gutter-landing .brand-banner {
+    background-image:linear-gradient(90deg,rgba(250,247,241,.72),rgba(250,247,241,.56) 68%,rgba(250,247,241,.28)),url('/assets/autumn-leaves-banner.webp');
+    background-position:62% center;
+  }
+  body.gutter-landing .brand-banner-inner {
+    grid-template-columns:80px minmax(0,1fr);
+    justify-items:start;
+    text-align:left;
+    align-items:center;
+    gap:16px;
+    min-height:260px;
+    padding:28px 20px;
+  }
+  body.gutter-landing .banner-logo img { width:80px; }
+  body.gutter-landing .banner-seasonal-title {
+    font-size:28px;
+    margin-bottom:16px;
+  }
+  body.gutter-landing .banner-seasonal-subtitle { font-size:17px; }
+}
+@media(max-width:360px) {
+  body.gutter-landing .brand-banner-inner {
+    grid-template-columns:68px minmax(0,1fr);
+    gap:12px;
+  }
+  body.gutter-landing .banner-logo img { width:68px; }
+  body.gutter-landing .banner-seasonal-title { font-size:25px; }
+  body.gutter-landing .banner-seasonal-subtitle { font-size:16px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  body.gutter-landing .banner-seasonal-title,
+  body.gutter-landing .banner-seasonal-subtitle {
+    animation:none;
+    opacity:1;
+    transform:none;
+  }
+}
