@@ -1361,3 +1361,21 @@ body.gutter-landing .banner-seasonal-title .halloween-phrase{
   font-style:normal;
   letter-spacing:.015em;
 }
+
+/* Put the seasonal punchline on its own line, revealed after the question. */
+body.gutter-landing .banner-seasonal-title .halloween-phrase{
+  display:block;
+  margin-top:.18em;
+  animation:seasonal-punchline-reveal .65s ease-out 1s both;
+}
+@keyframes seasonal-punchline-reveal{
+  from{opacity:0;transform:translateY(8px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@media(prefers-reduced-motion:reduce){
+  body.gutter-landing .banner-seasonal-title .halloween-phrase{
+    animation:none;
+    opacity:1;
+    transform:none;
+  }
+}
