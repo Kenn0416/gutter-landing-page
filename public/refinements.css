@@ -1349,14 +1349,14 @@ body.gutter-landing .hero-copy>p{
 
 /* Halloween accent limited to the seasonal punchline. */
 @font-face{
-  font-family:"New Caledonia Gothic";
-  src:url("/assets/new-caledonia-gothic.otf") format("opentype");
+  font-family:"Seasonal Metal";
+  src:url("/assets/seasonal-metal.woff") format("woff");
   font-weight:400;
   font-style:normal;
   font-display:swap;
 }
 body.gutter-landing .banner-seasonal-title .halloween-phrase{
-  font-family:"New Caledonia Gothic",Georgia,serif;
+  font-family:"Seasonal Metal",Georgia,serif;
   font-weight:400;
   font-style:normal;
   letter-spacing:.015em;
