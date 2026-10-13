@@ -1346,3 +1346,18 @@ body.gutter-landing .hero-copy>p{
   letter-spacing:.01em;
   line-height:1.7;
 }
+
+/* Halloween accent limited to the seasonal punchline. */
+@font-face{
+  font-family:"Halloween Gothic";
+  src:url("/assets/gothic-heading.woff") format("woff");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+body.gutter-landing .banner-seasonal-title .halloween-phrase{
+  font-family:"Halloween Gothic",Georgia,serif;
+  font-weight:400;
+  font-style:normal;
+  letter-spacing:.015em;
+}
