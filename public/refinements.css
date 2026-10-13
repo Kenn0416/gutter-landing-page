@@ -1330,3 +1330,19 @@ body.gutter-landing .sticky-contact .btn{
   body.gutter-landing .hero .cta-row .phone-cta,
   body.gutter-landing .sticky-contact .btn{font-size:15px}
 }
+
+/* Lighter editorial typography for the landing-page opening. */
+body.gutter-landing .banner-seasonal-title,
+body.gutter-landing .hero-copy h1{
+  font-family:"Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;
+  font-weight:400;
+  letter-spacing:-.025em;
+  line-height:1.18;
+}
+body.gutter-landing .banner-seasonal-subtitle,
+body.gutter-landing .hero-copy>p{
+  font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  font-weight:400;
+  letter-spacing:.01em;
+  line-height:1.7;
+}
