@@ -1390,3 +1390,16 @@ body.gutter-landing .banner-seasonal-title .halloween-phrase{
   text-shadow:none;
   -webkit-text-stroke:0;
 }
+
+/* A lighter, open seasonal accent instead of dense decorative lettering. */
+body.gutter-landing .banner-seasonal-title .halloween-phrase{
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:400;
+  font-style:italic;
+  font-size:1.05em;
+  letter-spacing:.055em;
+  line-height:1.45;
+  font-synthesis:none;
+  text-shadow:none;
+  -webkit-text-stroke:0;
+}
